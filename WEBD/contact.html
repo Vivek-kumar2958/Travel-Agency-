@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Travel Agency</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background-color: rgb(180, 165, 33);">
+   <h1 style="text-align: center; background-color: beige; ">CONTACT US</h1>
+        <nav>
+            <ul style="display: flex; text-align: center; gap: 40px; list-style-type: none; background-color: #070808;
+            padding: 30px 0; justify-content: center;">
+               <li> <a href="home.html" style="color: rgb(187, 145, 93);">HOME</a></li>
+                <li> <a href="services.html" style="color: rgb(187, 145, 93); ">SERVICES</a></li>
+                    <li>  <a href="booking.html" style="color: rgb(187, 145, 93); ;" >BOOKING</a></li>
+                        <li>  <a href="traveltips.html" style="color:  rgb(187, 145, 93);;">TRAVEL TIPS</a></li>
+                            <li><a href="contact.html" style="color:  rgb(187, 145, 93);;">CONTACT US</a></li>
+            </ul>
+        </nav>
+ 
+
+    
+     <div style="text-align: center;">
+    <section id="contact" class="contact">
+        <div class="container">
+           
+
+            <div class="contact-info">
+                <div class="contact-details">
+                    <h3>Our Office</h3>
+                    <p><strong>Address:</strong> kiet gaziabad, uttar pradesh ,India</p>
+                    <p><strong>Phone:</strong> +91 7896543221</p>
+                    <p><strong>Email:</strong> Dreamdestination@gmail.com</p>
+                    <p><strong>Business Hours:</strong> Mon - Fri: 9 AM - 6 PM</p>
+                </div>
+<div id="response">
+                
+                <form id="myForm">
+                    <label for="email">Enter email ID : </label>
+                    <input type="text" id="email" placeholder="enter email here:" required>
+                </br>
+                </br>  
+                <label for="password">Enter password : </label>
+                    <input type="password" id="password" required>
+        
+                </br>
+            </br> 
+                    
+                   <textarea name="text" id="text" rows="10" cols="30" placeholder="Enter your comment"></textarea>
+                   <input type="submit" id="submit" value="Click Here" required>
+                </form>
+            
+    </section>
+</div>
+</div>
+  
+    <footer >
+        <div style="position: absolute;left: 500px;bottom: 50px;">
+            2024 TravelAgency. All rights reserved.
+        </div>
+        
+    </footer>
+    <script>
+        
+        const form = document.getElementById('myForm');
+        const responseDiv = document.getElementById('response');
+
+       
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();  
+
+            
+            responseDiv.innerHTML = "Your response has been submitted successfully!";
+
+            
+            form.reset();
+        });
+    </script>
+    
+</body>
+
+</html>
